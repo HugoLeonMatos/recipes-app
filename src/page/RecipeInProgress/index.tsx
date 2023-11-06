@@ -19,9 +19,11 @@ function RecipeInProgress() {
   if (!recipeDetails) {
     return <p>Loading...</p>;
   }
+  console.log(recipeDetails);
 
   return (
     <div>
+
       <img
         src={ recipeDetails.image }
         alt={ recipeDetails.title }
@@ -95,6 +97,7 @@ function RecipeInProgress() {
       >
         Finish Recipe
       </button>
+
     </div>
   );
 }
